@@ -25,7 +25,7 @@ import playlistRouter from "./routes/playlists.route.js"
 import commentRouter from "./routes/comments.route.js"
 import likesRouter from "./routes/likes.route.js"
 import tweetRouter from "./routes/tweets.route.js"
-
+import dashboardRouter from "./routes/dashboard.route.js"
 // Base Roution will be here
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/subscriptions", subscriptionRouter)
@@ -34,7 +34,7 @@ app.use("/api/v1/playlist", playlistRouter)
 app.use("/api/v1/comment", commentRouter)
 app.use("/api/v1/likes", likesRouter)
 app.use("/api/v1/tweets", tweetRouter)
-
+app.use("/api/v1/dashboard", dashboardRouter)
 
 
 
