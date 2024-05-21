@@ -16,7 +16,7 @@ router.route("/refresh-token").post(refreshAccessToken)
 router.route("/get-user").get(verifyJWT, getCurrentUser)
 router.route("/update-user").patch(verifyJWT, updateUserDetails)
 router.route("/c/:username").get(verifyJWT, userChannelProfile)
-router.route("/watchHistory").get(verifyJWT, getWatchHistory)
+router.route("/history").get(verifyJWT, getWatchHistory)
 
 export default router;
 
